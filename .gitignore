@@ -1,6 +1,5 @@
 # Next.js
 .next/
-out/
 
 # 의존성
 /node_modules/
