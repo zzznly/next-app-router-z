@@ -1,5 +1,0 @@
-{
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/(afterLogin)/[username]/page": "app/(afterLogin)/[username]/page.js",
-  "/(afterLogin)/home/page": "app/(afterLogin)/home/page.js"
-}
