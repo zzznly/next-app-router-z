@@ -10,15 +10,14 @@ export const metadata: Metadata = {
 }
 
 type Props = {
-  children: React.ReactNode,
+  children: React.ReactNode
 };
 export default function RootLayout({
-  children,
+  children
 }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        루트 레이아웃
         {children}
       </body>
     </html>
