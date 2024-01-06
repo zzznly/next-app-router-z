@@ -13,4 +13,4 @@ https://www.inflearn.com/course/next-react-query-sns%EC%84%9C%EB%B9%84%EC%8A%A4
 | 프레임워크 | Next.js |
 | 언어 | Typescript |
 | 상태관리 | Zustand(클라이언트), React-query(서버) |
-| DevOps | MSW |
+| Others | MSW |
