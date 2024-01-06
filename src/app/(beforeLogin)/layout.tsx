@@ -2,7 +2,7 @@ import styles from "@/app/page.module.css";
 
 type Props = { children: React.ReactNode; modal: React.ReactNode };
 
-export default function Layout({ children, modal }: Props) {
+export default function Layout({ children, modal }: Props) {  
   return (
     <div className={styles.container}>
       {children}
@@ -20,7 +20,10 @@ export default function Layout({ children, modal }: Props) {
     children -> i/flow/login/page.tsx
     modal -> @modal/i/flow/login/page.tsx
 
-  여기서, children -> page.tsx, page -> @modal/.../login/page 가 되도록 하려면 Intercepting Routes 사용
+  여기서,
+    children -> page.tsx
+    modal -> @modal/i/flow/login/page
+  가 되도록 하려면 Intercepting Routes 사용 => @modal/(.)i/flow/login
 */
 
 /*
