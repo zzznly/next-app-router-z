@@ -1,32 +1,15 @@
-import styles from "@/app/page.module.css";
+import {ReactNode} from "react";
+import styles from '@/app/(beforeLogin)/_component/main.module.css';
 
-type Props = { children: React.ReactNode; modal: React.ReactNode };
-
-export default function Layout({ children, modal }: Props) {  
+type Props = { children: ReactNode, modal: ReactNode };
+export default function Layout({ children, modal }: Props) {
   return (
     <div className={styles.container}>
       {children}
       {modal}
     </div>
-  );
+  )
 }
 
-/*
-  http://localhost:3000 일때,
-    children -> page.tsx
-    modal -> @modal/default.tsx
-
-  http://localhost:3000/i/flow/login 일때,
-    children -> i/flow/login/page.tsx
-    modal -> @modal/i/flow/login/page.tsx
-
-  여기서,
-    children -> page.tsx
-    modal -> @modal/i/flow/login/page
-  가 되도록 하려면 Intercepting Routes 사용 => @modal/(.)i/flow/login
-*/
-
-/*
-  children -> /i/.., /login/.., page.tsx
-  modal -> /@modal/..
-*/
+// 주소가 localhost:3001일 때는 children->page.tsx, modal->@modal/default.tsx
+// 주소가 localhost:3001/i/flow/login 때는 chldren->i/flow/login/page.tsx, modal->@modal/i/flow/login/page.tsx

@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 }
 
 type Props = {
-  children: React.ReactNode
+  children: React.ReactNode,
 };
 export default function RootLayout({
-  children
+  children,
 }: Props) {
   return (
     <html lang="en">
